@@ -1,0 +1,6 @@
+.mp{
+    background-image: linear-gradient(90deg, rgb(0, 133, 189) 0px, rgb(0, 161, 168) 57%, rgb(0, 189, 87));
+    background-color: initial;
+    height: 3px;
+    display: block;
+}
