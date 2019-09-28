@@ -8,9 +8,6 @@
     <title>Medical News | Home</title>
     <!-- Font Awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -18,151 +15,112 @@
 
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <header class="row">
-                    <span class="col-6">
-                        <a href="index.html">Home</a>
-                        <a href="">About Us</a>
+        <header>
+            <nav>
+                <span>
+                    <a href="">HOME</a>
+                    <a href="">ABOUT US</a>
+                </span>
+                <span>
+                    <li class="fa fa-facebook fa-2x"></li>
+                    <li class="fa fa-linkedin fa-2x"></li>
+                    <li class="fa fa-twitter fa-2x"></li>
+                </span>
+            </nav>
+            <img id="logo" src="img/logo-2017-640-60.png" alt="Medical News">
+        </header>
+        <div class="upper">
+            <main>
+                <map name="human-body"></map>
+                <img id="anatomy" src="img/anatomy.jpg" alt="human body anatomy">
+            </main>
+            <div class="login">
+                <p>Welcome back. Log in here.</p>
+                <form action="">
+                    <input type="email" name="email" id="eamil" placeholder="username@service.com" required>
+                    <input type="password" name="pword" id="pword" placeholder="*****************" required>
+                    <a id="forgot" href="">Forgot password?</a>
+                    <input type="submit" value="Log in">
+                    <span>
+                        <input type="checkbox" name="stayin" id="stayin">
+                        <label for="stayin">Keep me logged in</label>
                     </span>
-                    <span class="col-1 offset-5">
-                        <li class="fa fa-facebook"></li>
-                        <li class="fa fa-linkedin"></li>
-                        <li class="fa fa-twitter"></li>
-                    </span>
-                </header>
+                </form>
+                <p>Or log in with</p>
+                <button class="fa fa-building ">
+                    Your Company Account
+                </button>
+                <button class="fa fa-google">
+                    Google
+                </button>
+                <button class="fa fa-windows">
+                    Work Account
+                </button>
+                <a href="">Don't have a login? Sign up.</a>
             </div>
         </div>
-        <div class="row">
-            <div class="col-4">
-                <img src="img/logo-2017-640-60.png" alt="Medical News Logo" class="img-fluid">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-8">
-                <map name="human-body">
+        <div class="lower">
+            <section>
+                <article>
+                    <img src="img/cancer.jpg" alt="bacteria">
+                    <h2>Do gut bacteria affect bowel cancer development?</h2>
+                    <p>A new meta-review of several existing studies has found links between gut microbiome composition
+                        and
+                        trends in bowel cancer development.</p>
+                </article>
+                <article>
+                    <img src="img/kindness.jpg" alt="employees together">
+                    <h2>Employer kindness can improve performance and mental health</h2>
+                    <p>New research examines the impact of a single, small gesture of kindness on the mental health and
+                        efficacy of 86 bus drivers living in China.</p>
+                </article>
+                <article>
+                    <img src="img/mouse.jpg" alt="white lab mouse">
+                    <h2>Mouse study sheds new light on fat formation</h2>
+                    <p>A recent study in mice has found a new biological mechanism that regulates the formation and
+                        accumulation of white fat tissue, a key factor in obesity.</p>
+                </article>
+                <article>
+                    <img src="img/sleepless.jpg" alt="sleeping employee">
+                    <h2>Could this mechanism explain why sleepless nights affect gut health?</h2>
+                    <p>A new study in mice reveals that the brain's 24-hour clock regulates the activity of a type of
+                        immune
+                        cell that has a strong influence on gut health.</p>
+                </article>
+            </section>
 
-                </map>
-                <img src="img/anatomy.jpg" alt="human Body anatomy" usemap="#human-body" class="img-fluid">
-            </div>
-            <div class="col-4">
-                <div class="login">
-                    <h4>Welcome back. Log in here.</h4>
-                    <form action="" method="post" class="login">
-                        <input type="email" name="email" id="email" placeholder="username@service.com" required>
-                        <input type="password" name="pword" id="pword" placeholder="**************" required>
-                        <a href="">Forgot password?</a>
-                        <input type="submit" value="Log in">
-                        <span><input type="checkbox" name="stayLoggedIn" id="stay-logged-in">
-                            <label for="stay-logged-in">Keep me logged in</label></span>
-                    </form>
-                    <h4>Or log in with</h4>
-                    <button>
-                        <li class="fa fa-building"></li>
-                        Your Company Account
-                    </button>
-                    <button>
-                        <li class="fa fa-google"></li>
-                        Google
-                    </button>
-                    <button>
-                        <li class="fa fa-windows"></li>
-                        Work Account
-                    </button>
-                    <a href="">Don't have a login? Sign up.</a>
+            <aside>
+                <h1>Most popular</h1>
+                <span class="mp-bar"></span>
+                <div class="mp">
+                    <p class="num">1</p>
+                    <p>how to eat 1,200 calories a day</p>
                 </div>
-            </div>
+                <span class="mp-in-bar"></span>
+                <div class="mp">
+                    <p class="num">2</p>
+                    <p>Hearing aids lower the chance of dementia, depresssion, and falling</p>
+                </div>
+                <span class="mp-in-bar"></span>
+                <div class="mp">
+                    <p class="num">3</p>
+                    <p>Why do female bonobos have more sex with each other than with males?</p>
+                </div>
+                <span class="mp-in-bar"></span>
+                <div class="mp">
+                    <p class="num">4</p>
+                    <p>Physical fitness liked to better brain function</p>
+                </div>
+                <span class="mp-in-bar"></span>
+                <div class="mp">
+                    <p class="num">5</p>
+                    <p>What are the effects of black mold exposure</p>
+                </div>
+                <span class="mp-bar lower-bar"></span>
+            </aside>
         </div>
-        <div class="row">
-            <div class="col-8">
-                <main>
-                    <div class="row">
-                        <div class="article col-6" id="1">
-                            <img src="img/cancer.jpg" alt="orage bacteria" class="img-fluid">
-                            <h2>Do gut bacteria affect bowel cancer development?</h2>
-                            <p>A new meta-review of several existing studies has found links between gut microbiome
-                                composition
-                                and
-                                trends in bowel cancer development.</p>
-                        </div>
-                        <div class="article col-6" id="2">
-                            <img src="img/kindness.jpg" alt="two employees" class="img-fluid">
-                            <h2>Employer kindness can improve performance and mental health</h2>
-                            <p>New research examines the impact of a single, small gesture of kindness on the mental
-                                health
-                                and
-                                efficacy of 86 bus drivers living in China.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="article col-6" id="3">
-                            <img src="img/mouse.jpg" alt="lab mouse" class="img-fluid">
-                            <h2>Mouse study sheds new light on fat formation</h2>
-                            <p>A recent study in mice has found a new biological mechanism that regulates the formation
-                                and
-                                accumulation of white fat tissue, a key factor in obesity.</p>
-                        </div>
-                        <div class="article col-6" id="4">
-                            <img src="img/sleepless.jpg" alt="sleeping employee" class="img-fluid">
-                            <h2>Could this mechanism explain why sleepless nights affect gut health?</h2>
-                            <p>A new study in mice reveals that the brain's 24-hour clock regulates the activity of a
-                                type
-                                of
-                                immune
-                                cell that has a strong influence on gut health.</p>
-                        </div>
-                    </div>
-                </main>
-            </div>
-            <div class="col-4">
-                <nav>
-                    <h1>Most popular</h1>
-                    <span class="mp-head"></span>
-                    <div class="article-heading" id="1">
-                        <h2 class="article-no">1</h2>
-                        <p class="article-title">How to eat 1,200 calories a day</p>
-                    </div>
-                    <span class="mp-inner"></span>
-                    <div class="article-heading" id="2">
-                        <h2 class="article-no">2</h2>
-                        <p class="article-title">Hearing aids lower chance of dementia, depression and falling</p>
-                    </div>
-                    <span class="mp-inner"></span>
-                    <div class="article-heading" id="3">
-                        <h2 class="article-no">3</h2>
-                        <p class="article-title">Why do female bonobos have more sex with each other than with makes</p>
-                    </div>
-                    <span class="mp-inner"></span>
-                    <div class="article-heading" id="4">
-                        <h2 class="article-no">4</h2>
-                        <p class="article-title">Physical fitness linked to better brain function</p>
-                    </div>
-                    <span class="mp-inner"></span>
-                    <div class="article-heading" id="5">
-                        <h2 class="article-no">5</h2>
-                        <p class="article-title">What are the effects of black mold exposure?</p>
-                    </div>
-                    <span class="mp-bottom"></span>
-                </nav>
-            </div>
-        </div>
-        <span class="footer-sp"></span>
-        <div class="row text-center">
-            <footer class="h5 col-12">Clone of Medical News as SWE363 hw1</footer>
-        </div>
+        <footer>Mediacl News</footer>
     </div>
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <!-- ajax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <!-- bootstrap -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
@@ -171,5 +129,4 @@
 css tricks
 w3schools
 mdn
-bootstrap
 -->
