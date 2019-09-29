@@ -1,11 +1,17 @@
+html, body{
+    margin: 0;
+}
 .container{
     display: flex;
     flex-flow: row wrap;
+    width: 1450px;
+    margin: auto;
 }
 header{
     width: 100%;
 }
 nav{
+    background-color: #dddddd;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +35,7 @@ li{
 main{
     flex: 2;
 }
-.login{
+.auth{
     background-color: #dddddd;
     display: flex;
     flex: 1;
@@ -41,15 +47,20 @@ main{
 form{
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 50%;
 }
 input{
     margin: 0.5em;
     height: 2em;
 }
-input[type="checkbox"]{
+input[type="checkbox"], input[type="radio"]{
     width: 20px; 
     height: 20px; 
+}
+.drop{
+    height: 35px;
+    width: 99%;
+    align-self: center
 }
 #forgot{
     align-self: flex-end;
@@ -142,7 +153,6 @@ footer{
     font-size: 2em;
     display: flex;
     justify-content: space-around;
-
 }
 footer > * {
     flex-grow: 0;
@@ -163,6 +173,26 @@ img{
     background-color: black;
     opacity: 0.5;
     height: 2px;
+}
+
+
+.page-main{
+    display: flex;
+    text-align: justify;
+}
+.page-title{
+    font-size: 4em;
+    margin: auto;
+}
+.page-content{
+    font-size: 2em;
+    margin: 1em;
+
+}
+.page-image{
+    margin-top: 110px;
+    height: 100%;
+
 }
 
 
