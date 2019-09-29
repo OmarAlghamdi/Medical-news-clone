@@ -1,16 +1,19 @@
 .container{
-    background-color: aqua;
     display: flex;
     flex-flow: row wrap;
 }
 header{
-    background-color: bisque;
     width: 100%;
 }
 nav{
-    background-color: aquamarine;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.nav-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
 }
 li{
     margin: 0.2em;
@@ -19,20 +22,21 @@ li{
     width: 40%;
 }
 .upper{
-    background-color: red;
     display: flex;
     width: 100%;
+    max-height: 600px;
 }
-
 main{
-    background-color: blueviolet;
     flex: 2;
 }
 .login{
+    background-color: #dddddd;
     display: flex;
     flex: 1;
     flex-direction: column;
     align-items: center;
+    font-size: 1.5em;
+    justify-content: space-between;
 }
 form{
     display: flex;
@@ -41,17 +45,59 @@ form{
 }
 input{
     margin: 0.5em;
+    height: 2em;
+}
+input[type="checkbox"]{
+    width: 20px; 
+    height: 20px; 
 }
 #forgot{
     align-self: flex-end;
+    font-size: 0.8em;
+}
+#submit{
+    background-color: cornflowerblue;
+    border: 0;
+    border-radius: 3px;
+}
+#label{
+    font-size: 0.8em;
+}
+.options::before{
+    content: "";
+   border: 1px solid gray;
+   width: 50%;
+   position: absolute;
+   top: 16px;
+   left: -80px;
+}
+.options::after{
+    content: "";
+   border: 1px solid gray;
+   width: 50%;
+   position: absolute;
+   top: 16px;
+   right: -80px;
+}
+.options{
+    position: relative;
+    display: inline-block;
+    margin: 50px 100px;
+}
+.full-wid{
+    width: 350px;
+    font-size: 0.8em;
+}
+.half-wid{
+    width: 170px;
+    font-size: 0.8em;
 }
 .lower{
-    background-color: yellow;
+    background-color: #fff;
     display: flex;
     width: 100%
 }
 section{
-    background-color: aquamarine;
     display: flex;
     flex-wrap: wrap;
     flex: 2;
@@ -71,11 +117,35 @@ aside{
 }
 article{
     flex: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+}
+.article-img{
+    display: block;
+    max-width: 30%;
+    max-height: 40%;
+    margin: 0.2em 0 ;
+}
+.title{
+    width: 65%;
+    margin-left: 0.5em;
+    padding-bottom: 0;
+}
+.summary{
+    font-size: 1.5em;
+    padding: 0.2em
 }
 footer{
     text-align: center;
     width: 100%;
     font-size: 2em;
+    display: flex;
+    justify-content: space-around;
+
+}
+footer > * {
+    flex-grow: 0;
 }
 img{
     width: 100%;

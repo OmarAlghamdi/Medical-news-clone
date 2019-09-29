@@ -18,8 +18,8 @@
         <header>
             <nav>
                 <span>
-                    <a href="">HOME</a>
-                    <a href="">ABOUT US</a>
+                    <a class="nav-link" href="">HOME</a>
+                    <a class="nav-link" href="">ABOUT US</a>
                 </span>
                 <span>
                     <li class="fa fa-facebook fa-2x"></li>
@@ -31,59 +31,69 @@
         </header>
         <div class="upper">
             <main>
-                <map name="human-body"></map>
-                <img id="anatomy" src="img/anatomy.jpg" alt="human body anatomy">
+                <map name="human-body">
+                        <area target="_blank" alt="liver" title="liver" href="organ/liver.html" coords="337,400,386,370,446,347,513,321,545,273,471,260,409,257,376,275,341,318,336,352" shape="poly">
+                        <area target="_blank" alt="heart" title="heart" href="organ/heart.html" coords="451,163,450,199,462,219,480,237,505,235,521,218,527,196,520,172,510,149,457,146" shape="poly">
+                        <area target="_blank" alt="colon" title="colon" href="organ/colon.html" coords="351,432,411,422,483,428,538,432,578,411,600,372,595,339,544,375,461,378,411,376,380,382,347,403" shape="poly">
+                </map>
+                <img usemap="#human-body" src="img/anatomy.jpg" alt="human body anatomy">
             </main>
             <div class="login">
-                <p>Welcome back. Log in here.</p>
+                <h3>Welcome back. Log in here.</h3>
                 <form action="">
                     <input type="email" name="email" id="eamil" placeholder="username@service.com" required>
                     <input type="password" name="pword" id="pword" placeholder="*****************" required>
                     <a id="forgot" href="">Forgot password?</a>
-                    <input type="submit" value="Log in">
+                    <input id="submit" type="submit" value="Log in">
                     <span>
                         <input type="checkbox" name="stayin" id="stayin">
-                        <label for="stayin">Keep me logged in</label>
+                        <label id="label" for="stayin">Keep me logged in</label>
                     </span>
                 </form>
-                <p>Or log in with</p>
-                <button class="fa fa-building ">
+                <p class="options">Or log in with</p>
+                <button class="fa fa-building full-wid ">
                     Your Company Account
                 </button>
-                <button class="fa fa-google">
-                    Google
-                </button>
-                <button class="fa fa-windows">
-                    Work Account
-                </button>
+                <span>
+                    <button class="fa fa-google half-wid">
+                        Google
+                    </button>
+                    <button class="fa fa-windows half-wid">
+                        Work Account
+                    </button>
+                </span>
+
                 <a href="">Don't have a login? Sign up.</a>
             </div>
         </div>
         <div class="lower">
             <section>
                 <article>
-                    <img src="img/cancer.jpg" alt="bacteria">
-                    <h2>Do gut bacteria affect bowel cancer development?</h2>
-                    <p>A new meta-review of several existing studies has found links between gut microbiome composition
+                    <img class="article-img" src="img/cancer.jpg" alt="bacteria">
+                    <h2 class="title">Do gut bacteria affect bowel cancer development?</h2>
+                    <p class="summary">A new meta-review of several existing studies has found links between gut
+                        microbiome composition
                         and
                         trends in bowel cancer development.</p>
                 </article>
                 <article>
-                    <img src="img/kindness.jpg" alt="employees together">
-                    <h2>Employer kindness can improve performance and mental health</h2>
-                    <p>New research examines the impact of a single, small gesture of kindness on the mental health and
-                        efficacy of 86 bus drivers living in China.</p>
+                    <img class="article-img" src="img/kindness.jpg" alt="employees together">
+                    <h2 class="title">Employer kindness can improve performance and mental health</h2>
+                    <p class="summary">New research examines the impact of a single, small gesture of kindness on the
+                        mental health and
                 </article>
                 <article>
-                    <img src="img/mouse.jpg" alt="white lab mouse">
-                    <h2>Mouse study sheds new light on fat formation</h2>
-                    <p>A recent study in mice has found a new biological mechanism that regulates the formation and
+                    <img class="article-img" src="img/mouse.jpg" alt="white lab mouse">
+                    <h2 class="title">Mouse study sheds new light on fat formation</h2>
+                    <p class="summary">A recent study in mice has found a new biological mechanism that regulates the
+                        formation and
                         accumulation of white fat tissue, a key factor in obesity.</p>
                 </article>
                 <article>
-                    <img src="img/sleepless.jpg" alt="sleeping employee">
-                    <h2>Could this mechanism explain why sleepless nights affect gut health?</h2>
-                    <p>A new study in mice reveals that the brain's 24-hour clock regulates the activity of a type of
+                    <img class="article-img" src="img/sleepless.jpg" alt="sleeping employee">
+                    <h2 class="title">Could this mechanism explain why sleepless nights affect gut health?</h2>
+                    <p class="summary">A new study in mice reveals that the brain's 24-hour clock regulates the activity
+                        of a type of
                         immune
                         cell that has a strong influence on gut health.</p>
                 </article>
@@ -119,7 +129,10 @@
                 <span class="mp-bar lower-bar"></span>
             </aside>
         </div>
-        <footer>Mediacl News</footer>
+        <footer>
+            Mediacl News - 2019
+            <a href="contactus.html">Contact Us</a>
+        </footer>
     </div>
 </body>
 
