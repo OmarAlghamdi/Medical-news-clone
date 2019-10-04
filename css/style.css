@@ -21,7 +21,7 @@ nav{
     text-transform: uppercase;
     padding: 10px;
 }
-li{
+i{
     margin: 0.2em;
 }
 #logo{
@@ -126,7 +126,7 @@ input[type="checkbox"], input[type="radio"]{
     display: flex;
     width: 100%
 }
-section{
+.articles{
     display: flex;
     flex-wrap: wrap;
     flex: 2;
