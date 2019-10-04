@@ -1,3 +1,6 @@
+/* Style sheet for the whole website 
+    The order of the CSS selector follow the order of appearnce in HTML files*/
+/* Style common across pages */
 html, body{
     margin: 0;
 }
@@ -27,14 +30,96 @@ i{
 #logo{
     width: 40%;
 }
+main{
+    flex: 2;
+}
+img{
+    width: 100%;
+}
+aside{
+    flex: 1;
+}
+article{
+    flex: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+}
+footer{
+    border-top: solid 3px black;
+    text-align: center;
+    width: 100%;
+    font-size: 2em;
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+}
+
+.contact{
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+/* Home page style */
 .upper{
     display: flex;
     width: 100%;
     max-height: 600px;
 }
-main{
+.lower{
+    background-color: #fff;
+    display: flex;
+    width: 100%
+}
+.articles{
+    display: flex;
+    flex-wrap: wrap;
     flex: 2;
 }
+.mp{
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+.mp-bar{
+    display: block;
+    background-image: linear-gradient(90deg, rgb(0, 133, 189) 0px, rgb(0, 161, 168) 57%, rgb(0, 189, 87));
+    height: 4px;
+}
+.lower-bar{
+    height: 2px;
+}
+.mp-in-bar{
+    display: block;
+    background-color: black;
+    opacity: 0.5;
+    height: 2px;
+}
+.num{
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0.3em
+}
+.artcle-link{
+    text-decoration: none;
+}
+.article-img{
+    display: block;
+    max-width: 30%;
+    max-height: 40%;
+    margin: 0.2em 0 ;
+}
+.title{
+    width: 65%;
+    margin-left: 0.5em;
+    padding-bottom: 0;
+}
+.summary{
+    font-size: 1.5em;
+    padding: 0.2em
+}
+
+/* Style of forms */
 .form{
     background-color: #dddddd;
     display: flex;
@@ -121,86 +206,8 @@ input[type="checkbox"], input[type="radio"]{
     width: 170px;
     font-size: 0.8em;
 }
-.lower{
-    background-color: #fff;
-    display: flex;
-    width: 100%
-}
-.articles{
-    display: flex;
-    flex-wrap: wrap;
-    flex: 2;
-}
-aside{
-    flex: 1;
-}
-.mp{
-    font-size: 1.5em;
-    display: flex;
-    align-items: center;
-}
-.num{
-    font-weight: bold;
-    font-size: 2em;
-    margin: 0.3em
-}
-article{
-    flex: 50%;
-    display: flex;
-    flex-flow: row wrap;
-    align-content: center;
-}
-.artcle-link{
-    text-decoration: none;
-}
-.article-img{
-    display: block;
-    max-width: 30%;
-    max-height: 40%;
-    margin: 0.2em 0 ;
-}
-.title{
-    width: 65%;
-    margin-left: 0.5em;
-    padding-bottom: 0;
-}
-.summary{
-    font-size: 1.5em;
-    padding: 0.2em
-}
-footer{
-    border-top: solid 3px black;
-    text-align: center;
-    width: 100%;
-    font-size: 2em;
-    display: flex;
-    flex-flow: row-reverse;
-    justify-content: space-between;
-}
 
-.contact{
-    text-decoration: none;
-    font-size: 0.8em;
-}
-img{
-    width: 100%;
-}
-.mp-bar{
-    display: block;
-    background-image: linear-gradient(90deg, rgb(0, 133, 189) 0px, rgb(0, 161, 168) 57%, rgb(0, 189, 87));
-    height: 4px;
-}
-.lower-bar{
-    height: 2px;
-}
-.mp-in-bar{
-    display: block;
-    background-color: black;
-    opacity: 0.5;
-    height: 2px;
-}
-
-
+/* Style of organ pages */
 .page-main{
     display: flex;
     text-align: justify;
@@ -220,7 +227,3 @@ img{
     width: 50%;
     align-self: center;
 }
-
-
-
-
