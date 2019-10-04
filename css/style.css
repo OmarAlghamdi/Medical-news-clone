@@ -204,6 +204,7 @@ img{
 .page-main{
     display: flex;
     text-align: justify;
+    flex-flow: column nowrap;
 }
 .page-title{
     font-size: 4em;
@@ -216,9 +217,10 @@ img{
 }
 .page-image{
     margin-top: 110px;
-    height: 100%;
-
+    width: 50%;
+    align-self: center;
 }
+
 
 
 
